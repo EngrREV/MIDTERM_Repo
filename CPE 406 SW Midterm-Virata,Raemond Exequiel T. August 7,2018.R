@@ -13,6 +13,7 @@ MeanFunction <- function(data,Month,Day){
   }
   mean(y,na.rm = TRUE)
 }
+MeanFunction(data,9,8)
 #3
 MinFunction <- function(data,Month){
   y <- 0
