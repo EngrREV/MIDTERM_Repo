@@ -6,12 +6,12 @@ subset_data <- function(data,min,max){
 subset_data(data,25,70)
 
 #2
-MeanFunction <- function(data,Month,Day){
+MeanFunction <- function(dat,Month,Day){
   y <- 0
   for (row in 1:nrow(data)) {
     y[row]<- ifelse(data[row,5]==Month & data[row,6]==Day,data[row,4],NA)
   }
-  mean(y,na.rm = TRUE)
+  
 }
 MeanFunction(data,9,8)
 #3
