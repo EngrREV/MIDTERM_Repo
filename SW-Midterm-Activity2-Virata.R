@@ -53,7 +53,7 @@ grayscale2 <- function(img2, x1){
     print("Input should only be TRUE or FALSE")
   }
 }
-grayscale2(img2, 2)
+grayscale2(img2, TRUE)
 
 invert2 <- function(img2, x1){
   image_rotate(img2, x1)

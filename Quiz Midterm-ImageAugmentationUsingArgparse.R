@@ -1,5 +1,5 @@
-#MidtermQuiz(Virata)
-##Sorry sir na Late
+##Midterm Quiz(Virata)
+##Late
 #!/usr/bin/Rscript
 args=commandArgs(trailingOnly = TRUE);
 
@@ -21,7 +21,7 @@ par3<-as.numeric(argsL$hei)
 par4<-as.logical(argsL$gray)
 par5<-as.numeric(argsL$deg)
 par6<-as.character(argsL$file)
-aug_pic<-function(addr, res_wid=200, res_hei=100, gray, deg=0, filename="penguins.jpg"){
+aug_pic<-function(addr, res_wid=200, res_hei=100, gray, deg=0, filename="aug_img.jpg"){
   library(imager)
   image<-load.image(addr)
   image<-resize(image,res_wid, res_hei)
@@ -29,7 +29,7 @@ aug_pic<-function(addr, res_wid=200, res_hei=100, gray, deg=0, filename="penguin
     image<- grayscale(image)
   }
   image<-imrotate(image,deg)
-  x<-"C:/Users/RaemondVirata30/Desktop/FOLDERS/DataScience/MIDTERM_Repo/MIDTERM_Repo/augmented-images/"
+  x<-"C:/Users/RaemondVirata30/Desktop/DataScience/"
   savef<-paste(x,filename)
   save.image(image,savef)
   plot(image)
